@@ -21,21 +21,21 @@ public class Robot extends TimedRobot {
   SendableChooser<Command> m_chooser = new SendableChooser<>();
 
   @Override
-  public void robotInit() {
+  public void robotInit() { /** runs init code on startup */
    
   }
 
   @Override
-  public void robotPeriodic() {
+  public void robotPeriodic() {/** updates every 30ms  */
   }
 
  
   @Override
-  public void disabledInit() {
+  public void disabledInit() { /**  inits when disabled  */
   }
 
   @Override
-  public void disabledPeriodic() {
+  public void disabledPeriodic() {/** runs when disabled */
     Scheduler.getInstance().run();
   }
 
@@ -63,9 +63,9 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void teleopPeriodic() {
-    Teleop.Periodic();
-    Teleop_Controller2.Teleop2();
-    Scheduler.getInstance().run();
+    Teleop.Periodic(); /** Driver Teleop control class */
+    Teleop_Controller2.Teleop2(); /** Operators Teleop control class */
+    Scheduler.getInstance().run(); /** Scheduler statrs  */
   }
 
   
