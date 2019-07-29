@@ -6,6 +6,7 @@ package frc.robot.subsystems;
  Button B - Retracts Front Pistons
  Button x - Extends Back Pistons 
  Button y - Retracts Back Pistons 
+ Trigger 
  
 */
 
@@ -18,13 +19,14 @@ public class Teleop {
 
     public static void Periodic() {
         DriveTrain.periodic();
+        // shifting control
         if (OI.controller1.getRawAxis(RobotMap.rightTrigger) == 1) { // shift up and down
             DriveTrain.shift(Shift.High_Gear);
         }
         else {
             DriveTrain.shift(Shift.Low_Gear);
         }
-
+        // Clime control
         if (OI.controller1.getRawButton(RobotMap.aButton)) {
             Stilts.actuateFront(Lift_Pistons.Extend);
         }
@@ -37,5 +39,6 @@ public class Teleop {
         if (OI.controller1.getRawButton(RobotMap.yButton)) {
             Stilts.actuateBack(Lift_Pistons.Retract);
         }
+
     }
 }
