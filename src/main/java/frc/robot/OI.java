@@ -7,6 +7,9 @@
 
 package frc.robot;
 
+import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
+
+import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.PowerDistributionPanel;
 import edu.wpi.first.wpilibj.Solenoid;
@@ -35,8 +38,8 @@ public class OI {
   public static DoubleSolenoid backStilt = new DoubleSolenoid(14, 6, 7);
 
   public static SpeedControllerGroup leftDriveGroup = new SpeedControllerGroup(leftCenterDriveMotor, leftBackDriveMotor,leftFrontDriveMotor);
-  public static SpeedControllerGroup rightDriveGroup = new SpeedControllerGroup(SpeedControllerGroup,
-      rightCenterDriveMotor, rightBackDriveMotor);
+  public static SpeedControllerGroup rightDriveGroup = new SpeedControllerGroup(rightCenterDriveMotor, rightBackDriveMotor);
+  
   public static DifferentialDrive drive = new DifferentialDrive(leftDriveGroup, rightDriveGroup);
   
   public static Solenoid shiftSolenoid = new Solenoid(RobotMap.PCMOneCAN, RobotMap.shiftSolenoid);
