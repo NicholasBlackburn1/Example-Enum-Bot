@@ -4,6 +4,11 @@ import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
 import frc.robot.OI;
 import frc.robot.Enums.Lift_Pistons;
 
+/**
+ * @author
+ * Switch statemints for both Sets of Stilts 
+ * Lift_Pistons is an Enum set is a list for case statements 
+ */
 public class Stilts {
     // Function for controlling lifing robot up
     public static void actuateFront(Lift_Pistons Stilts) {

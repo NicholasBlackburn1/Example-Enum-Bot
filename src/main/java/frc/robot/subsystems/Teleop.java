@@ -1,14 +1,18 @@
 package frc.robot.subsystems;
-/*
- Button Maps 
+/**
+ * @author
+ * @see 
+ * 
+ * Button Maps 
  Controller 1 (Driver controller)
  Button A - extends Front Pistons 
  Button B - Retracts Front Pistons
  Button x - Extends Back Pistons 
  Button y - Retracts Back Pistons 
- Trigger 
- 
-*/
+ RightTrigger - Toggles shifting  
+ *  
+ */
+
 
 import frc.robot.OI;
 import frc.robot.RobotMap;
@@ -19,7 +23,7 @@ public class Teleop {
 
     public static void Periodic() {
         DriveTrain.periodic();
-        // shifting control
+        
         if (OI.controller1.getRawAxis(RobotMap.rightTrigger) == 1) { // shift up and down
             DriveTrain.shift(Shift.High_Gear);
         }
