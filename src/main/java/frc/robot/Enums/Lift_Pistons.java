@@ -1,6 +1,6 @@
 package frc.robot.Enums;
 
-public enum Pistons{
+public enum Lift_Pistons {
     Extend, 
     Retract
 }
