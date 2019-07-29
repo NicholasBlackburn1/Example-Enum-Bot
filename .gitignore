@@ -153,6 +153,8 @@ gradle-app.setting
 # # VS Code Specific Java Settings
 .classpath
 .project
+.html
+
 .settings/
 bin/
 docks/
