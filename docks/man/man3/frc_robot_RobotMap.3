@@ -1,0 +1,369 @@
+.TH "frc.robot.RobotMap" 3 "Mon Jul 29 2019" "Version 1.0" "ENUM ROBOT" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+frc.robot.RobotMap \- The \fBRobotMap\fP is a mapping from the ports sensors and actuators are wired into to a variable name\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static int \fBpdpCAN\fP = 6"
+.br
+.ti -1c
+.RI "static int \fBcontrollerOnePort\fP = 0"
+.br
+.ti -1c
+.RI "static int \fBcontrollerTwoPort\fP = 1"
+.br
+.ti -1c
+.RI "static int \fBleftFrontDriveCAN\fP = 15"
+.br
+.ti -1c
+.RI "static int \fBleftCenterDriveCAN\fP = 11"
+.br
+.ti -1c
+.RI "static int \fBleftBackDriveCAN\fP = 12"
+.br
+.ti -1c
+.RI "static int \fBrightFrontDriveCAN\fP = 4"
+.br
+.ti -1c
+.RI "static int \fBrightCenterDriveCAN\fP = 13"
+.br
+.ti -1c
+.RI "static int \fBrightBackDriveCAN\fP = 14"
+.br
+.ti -1c
+.RI "static int \fBshiftSolenoid\fP = 0"
+.br
+.ti -1c
+.RI "static int \fBhatchActuate\fP = 1"
+.br
+.ti -1c
+.RI "static int \fBhatchTilt\fP = 2"
+.br
+.ti -1c
+.RI "static int \fBstiltWheelsRotateLeftCAN\fP = 6"
+.br
+.ti -1c
+.RI "static int \fBstiltWheelsRotateRightCAN\fP = 8"
+.br
+.ti -1c
+.RI "static int \fBstiltWheelsActuateLeftCAN\fP = 7"
+.br
+.ti -1c
+.RI "static int \fBstiltWheelsActuateRightCAN\fP = 9"
+.br
+.ti -1c
+.RI "static int \fBCargoClawLimit\fP = 0"
+.br
+.ti -1c
+.RI "static int \fBcargoArmActuateOnePWM\fP = 9"
+.br
+.ti -1c
+.RI "static int \fBcargoClawLeftRotatePWM\fP = 8"
+.br
+.ti -1c
+.RI "static int \fBcargoClawRightRotatePWM\fP = 0"
+.br
+.ti -1c
+.RI "static int \fBPCMOneCAN\fP = 13"
+.br
+.ti -1c
+.RI "static int \fBPCMTwoCAN\fP = 14"
+.br
+.ti -1c
+.RI "static int \fBbackStiltExtendOne\fP = 0"
+.br
+.ti -1c
+.RI "static int \fBbackStiltExtendTwo\fP = 1"
+.br
+.ti -1c
+.RI "static int \fBbackStiltRetractOne\fP = 4"
+.br
+.ti -1c
+.RI "static int \fBbackStiltRetractTwo\fP = 5"
+.br
+.ti -1c
+.RI "static int \fBfrontStiltExtendOne\fP = 2"
+.br
+.ti -1c
+.RI "static int \fBfrontStiltExtendTwo\fP = 3"
+.br
+.ti -1c
+.RI "static int \fBfrontStiltRetractOne\fP = 6"
+.br
+.ti -1c
+.RI "static int \fBfrontStiltRetractTwo\fP = 7"
+.br
+.ti -1c
+.RI "static int \fBballLimitDIO\fP = 0"
+.br
+.ti -1c
+.RI "static int \fBpressureSwitch\fP = 0"
+.br
+.ti -1c
+.RI "static int \fBPressure_read\fP = 0"
+.br
+.ti -1c
+.RI "static int \fBleftRampOne\fP = 0"
+.br
+.ti -1c
+.RI "static int \fBleftRampTwo\fP = 1"
+.br
+.ti -1c
+.RI "static int \fBrightRampOne\fP = 2"
+.br
+.ti -1c
+.RI "static int \fBrightRampTwo\fP = 3"
+.br
+.ti -1c
+.RI "static int \fBxButton\fP = 3"
+.br
+.ti -1c
+.RI "static int \fByButton\fP = 4"
+.br
+.ti -1c
+.RI "static int \fBrightStickX\fP = 4"
+.br
+.ti -1c
+.RI "static int \fBaButton\fP = 1"
+.br
+.ti -1c
+.RI "static int \fBbButton\fP = 2"
+.br
+.ti -1c
+.RI "static int \fBleftTrigger\fP = 2"
+.br
+.ti -1c
+.RI "static int \fBleftStickY\fP = 1"
+.br
+.ti -1c
+.RI "static int \fBrightTrigger\fP = 3"
+.br
+.ti -1c
+.RI "static int \fBleftBumper\fP = 5"
+.br
+.ti -1c
+.RI "static int \fBrightBumper\fP = 6"
+.br
+.ti -1c
+.RI "static int \fBselectButton\fP = 7"
+.br
+.ti -1c
+.RI "static int \fBstartButton\fP = 8"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBRobotMap\fP is a mapping from the ports sensors and actuators are wired into to a variable name\&. 
+
+This provides flexibility changing wiring, makes checking the wiring easier and significantly reduces the number of magic numbers floating around\&. 
+.PP
+Definition at line 16 of file RobotMap\&.java\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int frc\&.robot\&.RobotMap\&.aButton = 1\fC [static]\fP"
+
+.PP
+Definition at line 67 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.backStiltExtendOne = 0\fC [static]\fP"
+
+.PP
+Definition at line 45 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.backStiltExtendTwo = 1\fC [static]\fP"
+
+.PP
+Definition at line 46 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.backStiltRetractOne = 4\fC [static]\fP"
+
+.PP
+Definition at line 47 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.backStiltRetractTwo = 5\fC [static]\fP"
+
+.PP
+Definition at line 48 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.ballLimitDIO = 0\fC [static]\fP"
+
+.PP
+Definition at line 53 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.bButton = 2\fC [static]\fP"
+
+.PP
+Definition at line 68 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.cargoArmActuateOnePWM = 9\fC [static]\fP"
+
+.PP
+Definition at line 38 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.cargoClawLeftRotatePWM = 8\fC [static]\fP"
+
+.PP
+Definition at line 39 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.CargoClawLimit = 0\fC [static]\fP"
+
+.PP
+Definition at line 37 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.cargoClawRightRotatePWM = 0\fC [static]\fP"
+
+.PP
+Definition at line 40 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.controllerOnePort = 0\fC [static]\fP"
+
+.PP
+Definition at line 18 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.controllerTwoPort = 1\fC [static]\fP"
+
+.PP
+Definition at line 19 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.frontStiltExtendOne = 2\fC [static]\fP"
+
+.PP
+Definition at line 49 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.frontStiltExtendTwo = 3\fC [static]\fP"
+
+.PP
+Definition at line 50 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.frontStiltRetractOne = 6\fC [static]\fP"
+
+.PP
+Definition at line 51 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.frontStiltRetractTwo = 7\fC [static]\fP"
+
+.PP
+Definition at line 52 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.hatchActuate = 1\fC [static]\fP"
+
+.PP
+Definition at line 29 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.hatchTilt = 2\fC [static]\fP"
+
+.PP
+Definition at line 30 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.leftBackDriveCAN = 12\fC [static]\fP"
+
+.PP
+Definition at line 23 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.leftBumper = 5\fC [static]\fP"
+
+.PP
+Definition at line 72 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.leftCenterDriveCAN = 11\fC [static]\fP"
+
+.PP
+Definition at line 22 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.leftFrontDriveCAN = 15\fC [static]\fP"
+
+.PP
+Definition at line 21 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.leftRampOne = 0\fC [static]\fP"
+
+.PP
+Definition at line 58 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.leftRampTwo = 1\fC [static]\fP"
+
+.PP
+Definition at line 59 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.leftStickY = 1\fC [static]\fP"
+
+.PP
+Definition at line 70 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.leftTrigger = 2\fC [static]\fP"
+
+.PP
+Definition at line 69 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.PCMOneCAN = 13\fC [static]\fP"
+
+.PP
+Definition at line 42 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.PCMTwoCAN = 14\fC [static]\fP"
+
+.PP
+Definition at line 43 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.pdpCAN = 6\fC [static]\fP"
+
+.PP
+Definition at line 17 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.Pressure_read = 0\fC [static]\fP"
+
+.PP
+Definition at line 56 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.pressureSwitch = 0\fC [static]\fP"
+
+.PP
+Definition at line 55 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.rightBackDriveCAN = 14\fC [static]\fP"
+
+.PP
+Definition at line 26 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.rightBumper = 6\fC [static]\fP"
+
+.PP
+Definition at line 73 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.rightCenterDriveCAN = 13\fC [static]\fP"
+
+.PP
+Definition at line 25 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.rightFrontDriveCAN = 4\fC [static]\fP"
+
+.PP
+Definition at line 24 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.rightRampOne = 2\fC [static]\fP"
+
+.PP
+Definition at line 60 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.rightRampTwo = 3\fC [static]\fP"
+
+.PP
+Definition at line 61 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.rightStickX = 4\fC [static]\fP"
+
+.PP
+Definition at line 66 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.rightTrigger = 3\fC [static]\fP"
+
+.PP
+Definition at line 71 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.selectButton = 7\fC [static]\fP"
+
+.PP
+Definition at line 74 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.shiftSolenoid = 0\fC [static]\fP"
+
+.PP
+Definition at line 28 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.startButton = 8\fC [static]\fP"
+
+.PP
+Definition at line 75 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.stiltWheelsActuateLeftCAN = 7\fC [static]\fP"
+
+.PP
+Definition at line 34 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.stiltWheelsActuateRightCAN = 9\fC [static]\fP"
+
+.PP
+Definition at line 35 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.stiltWheelsRotateLeftCAN = 6\fC [static]\fP"
+
+.PP
+Definition at line 32 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.stiltWheelsRotateRightCAN = 8\fC [static]\fP"
+
+.PP
+Definition at line 33 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.xButton = 3\fC [static]\fP"
+
+.PP
+Definition at line 63 of file RobotMap\&.java\&.
+.SS "int frc\&.robot\&.RobotMap\&.yButton = 4\fC [static]\fP"
+
+.PP
+Definition at line 64 of file RobotMap\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ENUM ROBOT from the source code\&.

@@ -12,6 +12,8 @@ import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import frc.robot.subsystems.Teleop;
+import frc.robot.subsystems.Teleop_Controller2;
 
 
 public class Robot extends TimedRobot {
@@ -53,11 +55,16 @@ public class Robot extends TimedRobot {
 
   @Override
   public void teleopInit() {
-    
+  ;
   }
 
+  /**
+   * This function is called periodically during Teleop
+   */
   @Override
   public void teleopPeriodic() {
+    Teleop.Periodic();
+    Teleop_Controller2.Teleop2();
     Scheduler.getInstance().run();
   }
 
