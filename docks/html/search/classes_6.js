@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['robot',['Robot',['../dd/d54/classfrc_1_1robot_1_1_robot.html',1,'frc::robot']]],
-  ['robotmap',['RobotMap',['../de/d13/classfrc_1_1robot_1_1_robot_map.html',1,'frc::robot']]]
+  ['robot',['Robot',['../classfrc_1_1robot_1_1Robot.html',1,'frc::robot']]],
+  ['robotmap',['RobotMap',['../classfrc_1_1robot_1_1RobotMap.html',1,'frc::robot']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lift_5fpistons',['Lift_Pistons',['../da/d97/enumfrc_1_1robot_1_1_enums_1_1_lift___pistons.html',1,'frc::robot::Enums']]]
+  ['lift_5fpistons',['Lift_Pistons',['../enumfrc_1_1robot_1_1Enums_1_1Lift__Pistons.html',1,'frc::robot::Enums']]]
 ];

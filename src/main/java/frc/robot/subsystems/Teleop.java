@@ -21,23 +21,23 @@ public class Teleop {
     public static void Periodic() {
         DriveTrain.periodic();
         
-        if (OI.controller1.getRawAxis(RobotMap.rightTrigger) == 1) { /* !< Funtion Shifts into High Gear */
+        if (OI.controller1.getRawAxis(RobotMap.rightTrigger) == 1) { /** Funtion Shifts into High Gear *//* !< Funtion Shifts into High Gear */
             DriveTrain.shift(Shift.High_Gear);
         }
         else {
             DriveTrain.shift(Shift.Low_Gear); 
         }
         // Clime control
-        if (OI.controller1.getRawButton(RobotMap.aButton)) { /* !< Button A is Presses Front side of Robot Extends */
+        if (OI.controller1.getRawButton(RobotMap.aButton)) { /** Button A is Presses Front side of Robot Extends */ /* !< Button A is Presses Front side of Robot Extends */
             Stilts.actuateFront(Lift_Pistons.Extend);
         }
-        if (OI.controller1.getRawButton(RobotMap.bButton)) {/* !< Button B is Presses Front side of Robot Retracted  */
+        if (OI.controller1.getRawButton(RobotMap.bButton)) {/**Button B is Presses Front side of Robot Retracted  */ /* !< Button B is Presses Front side of Robot Retracted */
             Stilts.actuateFront(Lift_Pistons.Retract);
         }
-        if (OI.controller1.getRawButton(RobotMap.xButton)) {/* !< Button X is Presses Backend of Robot Extends  */
+        if (OI.controller1.getRawButton(RobotMap.xButton)) {/**Button X is Presses Backend of Robot Extends  */ /* !< Button X is Presses Backend of Robot Extends */
             Stilts.actuateBack(Lift_Pistons.Extend);
         }
-        if (OI.controller1.getRawButton(RobotMap.yButton)) { /* !< Button Y is Presses Backend of Robot Retracted */
+        if (OI.controller1.getRawButton(RobotMap.yButton)) { /** Button Y is Presses Backend of Robot Retracted */ /* !< Button Y is Presses Backend of Robot Retracted */
             Stilts.actuateBack(Lift_Pistons.Retract);
         }
 

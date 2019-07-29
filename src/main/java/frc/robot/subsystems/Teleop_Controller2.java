@@ -21,9 +21,9 @@ public class Teleop_Controller2 {
 
     public static void Teleop2() {
 
-        if (OI.controller2.getRawButton(RobotMap.leftBumper) == true) { /**  Funtion pulls ball into claw*/
+        if (OI.controller2.getRawButton(RobotMap.leftBumper) == true) { /**  Funtion pulls ball into claw*/ /* !<Function pulls ball into claw */
             Cargo.actuateClaw(-.35);
-        } else if (OI.controller2.getRawButton(RobotMap.rightBumper) && !OI.ballLimit.get()) { /** Funtion fires ball into claw */
+        } else if (OI.controller2.getRawButton(RobotMap.rightBumper) && !OI.ballLimit.get()) { /** Funtion fires ball into claw */ /* !<Funtion fires ball into claw*/
             Cargo.actuateClaw(.5);
         } else {
             Cargo.stopClaw();
@@ -35,11 +35,11 @@ public class Teleop_Controller2 {
         if (OI.controller2.getRawAxis(RobotMap.leftTrigger) != 0) { /** Funtion Closes Hatch  */ /* !< Funtion Closes Hatch */
             Hatch_Control.mainip(Hatch.Close);
         }
-        if (OI.controller2.getRawAxis(RobotMap.leftStickY) != 0) { /** Funtion Moves Cargo Arm in Y axis*//*!<Funtion Moves Cargo Arm in Y axis*/
+        if (OI.controller2.getRawAxis(RobotMap.leftStickY) != 0) { /** Funtion Moves Cargo Arm in Y axis*/ /*!<Funtion Moves Cargo Arm in Y axis*/
             Cargo.actuateArm(-OI.controller2.getRawAxis(RobotMap.leftStickY) * .5);
 
         } else if (OI.controller2.getRawAxis(RobotMap.leftStickY) == 0  
-                && OI.controller2.getRawButton(RobotMap.xButton) == false) { /* !< Funtion Kills Cargo arm*//*!<Function kills Cargo arm*/
+                && OI.controller2.getRawButton(RobotMap.xButton) == false) { /* !< Funtion Kills Cargo arm*/ /*!<Function kills Cargo arm*/
             Cargo.stopArm();
         }
     }

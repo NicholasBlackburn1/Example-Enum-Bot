@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cargo_2ejava',['Cargo.java',['../d1/da9/_cargo_8java.html',1,'']]]
+  ['cargo_2ejava',['Cargo.java',['../Cargo_8java.html',1,'']]]
 ];
