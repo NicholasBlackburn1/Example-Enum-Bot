@@ -1,8 +1,4 @@
 package frc.robot.subsystems;
-
-
-
-import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
 import frc.robot.OI;
 import frc.robot.Enums.Shift;
 
